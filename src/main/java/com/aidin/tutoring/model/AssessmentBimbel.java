@@ -35,16 +35,16 @@ public class AssessmentBimbel {
 
 	@Column(name="note", nullable=true, insertable=true, updatable=true)
 	private String note;
-	
+
 	@Column(name="create_by", nullable=false, insertable=true, updatable=false)
 	private String createby;
-	
+
 	@Column(name="create_date", nullable=false, insertable=true, updatable=false)
 	private Date createdate;
 
 	@Column(name="modify_by", nullable=false, insertable=true, updatable=true)
 	private String modifyby;
-	
+
 	@Column(name="modify_date", nullable=false, insertable=true, updatable=true)
 	private Date modifydate;
 

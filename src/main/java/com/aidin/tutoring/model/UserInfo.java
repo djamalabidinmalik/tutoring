@@ -33,9 +33,6 @@ public class UserInfo {
 	@Column(name="phone2", nullable=true, insertable=true, updatable=true)
 	private String phone2;
 
-	@Column(name="phone3", nullable=true, insertable=true, updatable=true)
-	private String phone3;
-
 	@Column(name="grade", nullable=false, insertable=true, updatable=true)
 	private String grade;
 
@@ -118,14 +115,6 @@ public class UserInfo {
 
 	public void setPhone2(String phone2) {
 		this.phone2 = phone2;
-	}
-
-	public String getPhone3() {
-		return phone3;
-	}
-
-	public void setPhone3(String phone3) {
-		this.phone3 = phone3;
 	}
 
 	public String getGrade() {

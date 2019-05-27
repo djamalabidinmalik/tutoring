@@ -12,39 +12,39 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "user")
 public class User {
-	
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="pk_user")
 	private Long pkuser;
-	
+
 	@Column(name="name", nullable=false, insertable=true, updatable=true)
 	private String name;
-	
+
 	@Column(name="username", nullable=false, insertable=true, updatable=true)
 	private String username;
-	
+
 	@Column(name="password", nullable=false, insertable=true, updatable=true)
 	private String password;
-	
+
 	@Column(name="fk_group", nullable=false, insertable=true, updatable=true)
 	private int fkgroup;
-	
+
 	@Column(name="active", nullable=false, insertable=true, updatable=true)
 	private Boolean active;
-	
+
 	@Column(name="last_login", nullable=false, insertable=true, updatable=true)
 	private Date lastlogin;
-	
+
 	@Column(name="create_by", nullable=false, insertable=true, updatable=false)
 	private String createby;
-	
+
 	@Column(name="create_date", nullable=false, insertable=true, updatable=false)
 	private Date createdate;
 
 	@Column(name="modify_by", nullable=true, insertable=true, updatable=true)
 	private String modifyby;
-	
+
 	@Column(name="modify_date", nullable=true, insertable=true, updatable=true)
 	private Date modifydate;
 

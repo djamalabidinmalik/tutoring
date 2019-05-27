@@ -12,12 +12,12 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "course")
 public class Course {
-	
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="pk_course")
 	private Long pkcourse;
-	
+
 	@Column(name="name", nullable=false, insertable=true, updatable=true)
 	private String name;
 
@@ -26,16 +26,16 @@ public class Course {
 
 	@Column(name="price", nullable=false, insertable=true, updatable=false)
 	private Long price;
-	
+
 	@Column(name="create_by", nullable=false, insertable=true, updatable=false)
 	private String createby;
-	
+
 	@Column(name="create_date", nullable=false, insertable=true, updatable=false)
 	private Date createdate;
 
 	@Column(name="modify_by", nullable=false, insertable=true, updatable=true)
 	private String modifyby;
-	
+
 	@Column(name="modify_date", nullable=false, insertable=true, updatable=true)
 	private Date modifydate;
 

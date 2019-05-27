@@ -10,31 +10,22 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "assessment_private")
-public class AssessmentPrivate {
+@Table(name="lookup")
+public class Lookup {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	@Column(name="pk_assessment_Private")
-	private Long pkassessmentprivate;
+	@Column(name="pk_lookup")
+	private Long pklookup;
 
-	@Column(name="student_id", nullable=false, insertable=true, updatable=true)
-	private Long studentid;
-
-	@Column(name="mentor_id", nullable=false, insertable=true, updatable=true)
-	private Long mentorid;
-
-	@Column(name="fk_course", nullable=false, insertable=true, updatable=true)
-	private Long fkcourse;
-
-	@Column(name="date", nullable=false, insertable=true, updatable=false)
-	private Date date;
+	@Column(name="label", nullable=false, insertable=true, updatable=true)
+	private String label;
 
 	@Column(name="description", nullable=false, insertable=true, updatable=true)
 	private String description;
 
-	@Column(name="note", nullable=true, insertable=true, updatable=true)
-	private String note;
+	@Column(name="party", nullable=false, insertable=true, updatable=true)
+	private String party;
 
 	@Column(name="create_by", nullable=false, insertable=true, updatable=false)
 	private String createby;
@@ -48,44 +39,20 @@ public class AssessmentPrivate {
 	@Column(name="modify_date", nullable=false, insertable=true, updatable=true)
 	private Date modifydate;
 
-	public Long getPkassessmentprivate() {
-		return pkassessmentprivate;
+	public Long getPklookup() {
+		return pklookup;
 	}
 
-	public void setPkassessmentprivate(Long pkassessmentprivate) {
-		this.pkassessmentprivate = pkassessmentprivate;
+	public void setPklookup(Long pklookup) {
+		this.pklookup = pklookup;
 	}
 
-	public Long getStudentid() {
-		return studentid;
+	public String getLabel() {
+		return label;
 	}
 
-	public void setStudentid(Long studentid) {
-		this.studentid = studentid;
-	}
-
-	public Long getMentorid() {
-		return mentorid;
-	}
-
-	public void setMentorid(Long mentorid) {
-		this.mentorid = mentorid;
-	}
-
-	public Long getFkcourse() {
-		return fkcourse;
-	}
-
-	public void setFkcourse(Long fkcourse) {
-		this.fkcourse = fkcourse;
-	}
-
-	public Date getDate() {
-		return date;
-	}
-
-	public void setDate(Date date) {
-		this.date = date;
+	public void setLabel(String label) {
+		this.label = label;
 	}
 
 	public String getDescription() {
@@ -96,12 +63,12 @@ public class AssessmentPrivate {
 		this.description = description;
 	}
 
-	public String getNote() {
-		return note;
+	public String getParty() {
+		return party;
 	}
 
-	public void setNote(String note) {
-		this.note = note;
+	public void setParty(String party) {
+		this.party = party;
 	}
 
 	public String getCreateby() {

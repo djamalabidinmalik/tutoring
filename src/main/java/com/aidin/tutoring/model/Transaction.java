@@ -12,15 +12,15 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "transaction")
 public class Transaction {
-	
+
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="pk_transaction")
 	private Long pktransaction;
-	
+
 	@Column(name="fk_user", nullable=false, insertable=true, updatable=true)
 	private Long fkuser;
-	
+
 	@Column(name="transaction_date", nullable=false, insertable=true, updatable=true)
 	private Date transactiondate;
 
@@ -41,7 +41,7 @@ public class Transaction {
 
 	@Column(name="modify_by", nullable=true, insertable=true, updatable=true)
 	private String modifyby;
-	
+
 	@Column(name="modify_date", nullable=true, insertable=true, updatable=true)
 	private Date modifydate;
 

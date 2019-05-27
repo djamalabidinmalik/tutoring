@@ -17,34 +17,34 @@ public class SchedulePrivate {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="pk_schedule_private")
 	private Long pkscheduleprivate;
-	
+
 	@Column(name="fk_student_private", nullable=false, insertable=true, updatable=true)
 	private Long fkstudentprivate;
-	
+
 	@Column(name="fk_course", nullable=false, insertable=true, updatable=true)
 	private Long fkcourse;
-	
+
 	@Column(name="mentor_id", nullable=true, insertable=true, updatable=true)
 	private Long mentorid;
 
 	@Column(name="gender", nullable=false, insertable=true, updatable=false)
 	private String gender;
-	
+
 	@Column(name="price", nullable=false, insertable=true, updatable=true)
 	private Long price;
-	
+
 	@Column(name="available", nullable=false, insertable=true, updatable=true)
 	private boolean available;
-	
+
 	@Column(name="create_by", nullable=false, insertable=true, updatable=false)
 	private String createby;
-	
+
 	@Column(name="create_date", nullable=false, insertable=true, updatable=false)
 	private Date createdate;
 
 	@Column(name="modify_by", nullable=false, insertable=true, updatable=true)
 	private String modifyby;
-	
+
 	@Column(name="modify_date", nullable=false, insertable=true, updatable=true)
 	private Date modifydate;
 

@@ -17,7 +17,7 @@ public class ScheduleBimbel {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="pk_schedule_bimbel")
 	private Long pkschedulebimbel;
-	
+
 	@Column(name="fk_course", nullable=false, insertable=true, updatable=true)
 	private Long fkcourse;
 
@@ -27,9 +27,6 @@ public class ScheduleBimbel {
 	@Column(name="session", nullable=false, insertable=true, updatable=true)
 	private String session;
 
-	@Column(name="grade", nullable=false, insertable=true, updatable=true)
-	private String grade;
-
 	@Column(name="mentor_id", nullable=false, insertable=true, updatable=true)
 	private Long mentorid;
 
@@ -38,16 +35,16 @@ public class ScheduleBimbel {
 
 	@Column(name="room_class", nullable=false, insertable=true, updatable=true)
 	private String roomclass;
-	
+
 	@Column(name="create_by", nullable=false, insertable=true, updatable=false)
 	private String createby;
-	
+
 	@Column(name="create_date", nullable=false, insertable=true, updatable=false)
 	private Date createdate;
 
 	@Column(name="modify_by", nullable=false, insertable=true, updatable=true)
 	private String modifyby;
-	
+
 	@Column(name="modify_date", nullable=false, insertable=true, updatable=true)
 	private Date modifydate;
 
@@ -81,14 +78,6 @@ public class ScheduleBimbel {
 
 	public void setSession(String session) {
 		this.session = session;
-	}
-
-	public String getGrade() {
-		return grade;
-	}
-
-	public void setGrade(String grade) {
-		this.grade = grade;
 	}
 
 	public Long getMentorid() {

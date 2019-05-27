@@ -17,7 +17,7 @@ public class StudentPrivate {
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column(name="pk_student_private")
 	private Long pkstudentprivate;
-	
+
 	@Column(name="student_id", nullable=false, insertable=true, updatable=true)
 	private Long studentid;
 
@@ -35,13 +35,13 @@ public class StudentPrivate {
 
 	@Column(name="create_by", nullable=false, insertable=true, updatable=false)
 	private String createby;
-	
+
 	@Column(name="create_date", nullable=false, insertable=true, updatable=false)
 	private Date createdate;
 
 	@Column(name="modify_by", nullable=false, insertable=true, updatable=true)
 	private String modifyby;
-	
+
 	@Column(name="modify_date", nullable=false, insertable=true, updatable=true)
 	private Date modifydate;
 
